@@ -1,0 +1,450 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CAFE",
+    "dateExported": "2023-05-21T16:23:59.488Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7b2eb322-3762-4cce-a73c-49835c5176d6",
+            "name": "MEJA",
+            "containerId": "",
+            "created": "2023-04-04T04:12:05.915Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "acf70a82-5fe2-4de6-b953-27a96f920d24",
+            "name": "MENU",
+            "containerId": "",
+            "created": "2023-04-04T04:12:12.102Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "USER",
+            "containerId": "",
+            "created": "2023-04-04T04:12:23.581Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "TRANSAKSI",
+            "containerId": "",
+            "created": "2023-04-04T04:12:36.073Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0affc7ad-8012-4201-884e-109604b64839",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "7b2eb322-3762-4cce-a73c-49835c5176d6",
+            "name": "Tampil semua meja",
+            "url": "http://localhost:8000/meja",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-04T04:32:45.151Z",
+            "modified": "2023-05-18T14:19:22.326Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "28e744ef-a9d4-470c-b3bc-92769f6fe596",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "7b2eb322-3762-4cce-a73c-49835c5176d6",
+            "name": "tambah meja",
+            "url": "http://localhost:8000/meja",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-19T14:31:10.796Z",
+            "modified": "2023-05-19T04:21:43.225Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nomor_meja\":\"1s\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "922d4f25-cd3b-4eb4-ab86-153967a48097",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "7b2eb322-3762-4cce-a73c-49835c5176d6",
+            "name": "Edit meja",
+            "url": "http://localhost:8000/meja/5",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-04-19T14:59:52.872Z",
+            "modified": "2023-05-19T04:22:19.812Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nomor_meja\":\"1Z\" \n\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7bb14ef-0c43-40dd-988f-c9a7f00c1203",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "7b2eb322-3762-4cce-a73c-49835c5176d6",
+            "name": "Hapus meja",
+            "url": "http://localhost:8000/meja/5",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-04-19T15:10:32.348Z",
+            "modified": "2023-05-19T04:22:36.444Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "14e01221-64c8-494a-843d-4f3cdeab3bc3",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "tambah transaksi",
+            "url": "http://localhost:8000/transaksi",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-15T05:49:47.229Z",
+            "modified": "2023-05-21T16:19:33.761Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"tgl_transaksi\":\"2005-11-05\",\n\"id_user\":1, \n\"id_meja\":1, \n\"nama_pelanggan\":\"coba\", \n\"status\":\"lunas\", \n\"detail_transaksi\":[\n  { \"id_menu\": 1,\"qty\":2},\n  { \"id_menu\": 2,\"qty\":9}\n  \n  ]\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1fb59bc8-7e22-42ac-939d-842caa466fae",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "edit transaksi",
+            "url": "http://localhost:8000/transaksi/18",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-05-15T05:56:29.106Z",
+            "modified": "2023-05-18T14:42:25.945Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"tgl_transaksi\":\"2022-05-15\",\n\"id_user\":3, \n\"id_meja\":3, \n\"nama_pelanggan\":\"test edit\", \n\"status\":\"lunas\", \n\"detail_transaksi\":[\n  { \"id_menu\": 6,\"harga\":150000}\n  ]\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1c8a544-be14-47bf-8db9-36a3eccb1d5d",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "acf70a82-5fe2-4de6-b953-27a96f920d24",
+            "name": "tampil semua menu",
+            "url": "http://localhost:8000/menu",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-15T05:57:36.829Z",
+            "modified": "2023-05-18T14:23:32.189Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "23da5e6e-6eb9-4dfa-919c-d836cb0443e6",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "acf70a82-5fe2-4de6-b953-27a96f920d24",
+            "name": "tambah menu",
+            "url": "http://localhost:8000/menu",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-15T05:58:04.115Z",
+            "modified": "2023-05-19T07:24:56.381Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nama_menu",
+                        "value": "sushi"
+                    },
+                    {
+                        "name": "jenis",
+                        "value": "makanan"
+                    },
+                    {
+                        "name": "deskripsi",
+                        "value": "keren"
+                    },
+                    {
+                        "name": "harga",
+                        "value": "1000"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "gambar",
+                        "value": "c:\\Users\\Asus\\OneDrive\\Gambar\\bbk.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d5ed5ce-a65d-45a1-add2-5db107e9898b",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "hapus transaksi",
+            "url": "http://localhost:8000/transaksi/9",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-05-15T06:40:23.045Z",
+            "modified": "2023-05-18T14:45:31.155Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "73d0a53a-6979-4c48-aa2b-7b8d9a6a19e6",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "acf70a82-5fe2-4de6-b953-27a96f920d24",
+            "name": "search menu",
+            "url": "http://localhost:8000/menu/find",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-05-15T12:58:25.201Z",
+            "modified": "2023-05-18T14:29:26.917Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"keyword\":\"teh\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "34fdf7f1-ec1b-4daf-bf64-abd7b17e847b",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "tampil semua user",
+            "url": "http://localhost:8000/user",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-05-15T13:26:16.056Z",
+            "modified": "2023-05-19T04:21:15.077Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7cee381d-c92c-47fc-99ee-716784bf94ac",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "edit user",
+            "url": "http://localhost:8000/user/6",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-05-15T13:37:59.194Z",
+            "modified": "2023-05-19T04:16:01.697Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nama_user\":\"kikik\",\n\"role\":\"manajer\",\n\"username\":\"kikik\",\n\"password\":\"123456789\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "59c23cff-d73f-4bc3-a81e-91d4101053c7",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "tambah user",
+            "url": "http://localhost:8000/user",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-05-15T13:38:32.348Z",
+            "modified": "2023-05-19T04:19:03.271Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nama_user\":\"test2\",\n\"role\":\"manager\",\n\"username\":\"depii\",\n\"password\":\"123456789\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "85c43fbc-f63c-42f7-8356-d96005ecd553",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "tampil semua transaksi",
+            "url": "http://localhost:8000/transaksi",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-05-15T13:40:24.978Z",
+            "modified": "2023-05-18T14:37:07.624Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cba74d77-b93e-4c49-bcae-4c2e69b45c6d",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "auth",
+            "url": "http://localhost:8000/auth",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-05-15T14:05:56.260Z",
+            "modified": "2023-05-19T04:19:53.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"username\":\"kediri\", \n\"password\":\"123456789\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2d298bf8-91f2-4d2d-b242-26d8b1bb67eb",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "25a105ec-7992-4fab-823a-e3971e75b942",
+            "name": "search transaksi",
+            "url": "http://localhost:8000/transaksi/find",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-05-15T14:56:44.360Z",
+            "modified": "2023-05-21T16:20:32.704Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"startDate\": \"2005-11-05\",\r\n  \"endDate\": \"2005-11-06\",\r\n   \"keyword\": \"\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef205ed7-3658-4832-8dd3-8ae43af7206d",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "search user",
+            "url": "http://localhost:8000/user/find",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-05-15T15:04:30.309Z",
+            "modified": "2023-05-18T14:33:54.562Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"keyword\":\"kkk\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad1f4253-b1d9-4bf0-b438-b79e6fd6ad65",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "57b08e0a-7fb5-4689-9a3c-a52f23d8b088",
+            "name": "hapus user",
+            "url": "http://localhost:8000/user/9",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-05-15T15:05:49.924Z",
+            "modified": "2023-05-18T14:34:21.983Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "845064cd-f028-40b1-83e7-17695274af67",
+            "colId": "52b49d50-8856-46f7-8088-ef48e4eb041a",
+            "containerId": "acf70a82-5fe2-4de6-b953-27a96f920d24",
+            "name": "hapus menu",
+            "url": "http://localhost:8000/menu/11",
+            "method": "DELETE",
+            "sortNum": 200000,
+            "created": "2023-05-15T15:07:17.722Z",
+            "modified": "2023-05-19T04:42:45.515Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwibmFtYV91c2VyIjoib3JpbiIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoicmluIiwicGFzc3dvcmQiOiIzOWYzZTFhNmM0NjU5YzQ5MDUzZTRmMWVmNTdiYjg4NCIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMTdUMDg6NDM6MjEuMDAwWiJ9.xhP4Xeau_oAYZ_slAd9iOvtd5QfqUtUjMYdRFQaQjqs"
+            },
+            "tests": []
+        }
+    ]
+}

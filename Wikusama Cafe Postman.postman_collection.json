@@ -1,0 +1,1105 @@
+{
+	"info": {
+		"_postman_id": "676f8576-6d09-4e4c-a214-b8ee74c25c4e",
+		"name": "Wikusama Cafe Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25368139"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_user",
+									"value": "irza pahlevi admin",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/user/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"keyword\":\"dpi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/user/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/user/getAllUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"getAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/user/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_user",
+									"value": "test ubah",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "levi",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/user/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user berdasarkan role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/user/kasir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"kasir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "Add Menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_menu",
+									"value": "nasi goreng",
+									"type": "text"
+								},
+								{
+									"key": "jenis",
+									"value": "makanan",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "mbuh",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/C:/Users/Asus/Downloads/th.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/menu/addMenu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"menu",
+								"addMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/menu/getAllMenu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"menu",
+								"getAllMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/menu/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"menu",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_menu",
+									"value": "apa aja dag",
+									"type": "text"
+								},
+								{
+									"key": "jenis",
+									"value": "minuman",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "adfwfad",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/C:/Users/irzad/OneDrive/Pictures/Saved Pictures/Me/bromo.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host4}}/menu/1",
+							"host": [
+								"{{host4}}"
+							],
+							"path": [
+								"menu",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menu laris",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/menu/MenuLaris",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"menu",
+								"MenuLaris"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menu Jarang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/menu/MenuJarang",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"menu",
+								"MenuJarang"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meja",
+			"item": [
+				{
+					"name": "Add Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nomor_meja",
+									"value": "122",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "kosong",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/meja/addMeja",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"addMeja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "keyword",
+									"value": "122",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/meja/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/meja/getAllMeja",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"getAllMeja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/meja/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nomor_meja",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "kosong",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/meja/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status kosong Meja",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/meja/status/kosong",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"meja",
+								"status",
+								"kosong"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaksi",
+			"item": [
+				{
+					"name": "Add Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n// \"tgl_transaksi\":\"2023-05-18 13:30:00\",\r\n \"id_user\":1,\r\n \"id_meja\":6,\r\n \"nama_pelanggan\":\"irza\",\r\n \"status\":\"belum_bayar\",\r\n \"detail_transaksi\":[\r\n { \"id_menu\": 1, \"qty\":6},\r\n { \"id_menu\": 2, \"qty\":2}\r\n ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/addTransaksi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"addTransaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillter Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiZGV2aWkiLCJyb2xlIjoia2FzaXIiLCJ1c2VybmFtZSI6ImRlcGkiLCJwYXNzd29yZCI6IjI1ZjllNzk0MzIzYjQ1Mzg4NWY1MTgxZjFiNjI0ZDBiIiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNS0yNFQwNzo1MjoxMi4wMDBaIn0.eiTGTcOkHDvQDuaR9SOFy_ttxDQ6CS5vmnt1DGLbejI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "keyword",
+									"value": "pahlevi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/filterTransaksi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"filterTransaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jumlah Pendapatan Tanggal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"date\": \"2023-09-30\"\r\n// \"month\": 6\r\n// \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/jumlahPendapatan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"jumlahPendapatan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jumlah Pendapatan Bulanan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n// \"date\": \"2023-05-23\"\r\n\"month\": 9,\r\n\"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/jumlahPendapatan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"jumlahPendapatan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jumlah Pendapatan Tahunan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n// \"date\": \"2023-05-23\"\r\n// \"month\": 6\r\n\"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/jumlahPendapatan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"jumlahPendapatan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/transaksi/getTransaksi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"getTransaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/transaksi/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Status Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYV91c2VyIjoiaXJ6YSIsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoiaGllcm9pYyIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA0OjE5OjIyLjAwMFoifQ.MYG-aQtpcxN4rs4E4Lt5tOjGtCBT9Iugq9TkAUK35m8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"tgl_transaksi\":\"2023-05-15 13:30:00\",\r\n \"id_user\":1,\r\n \"id_meja\":1,\r\n \"nama_pelanggan\":\"irza\",\r\n \"status\":\"lunas\",\r\n \"detail_transaksi\":[\r\n { \"id_menu\": 1},\r\n { \"id_menu\": 2}\r\n ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/updateStatus/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"updateStatus",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all transaksi per kasir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/getTransaksiPerKasir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"getTransaksiPerKasir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find transaksi",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\": \"2023-01-01\",\r\n  \"endDate\": \"2023-12-31\"\r\n//   \"keyword\": \"Nama Pelanggan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/transaksi/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"transaksi",
+								"find"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Authentication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "depi",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/authentication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"authentication"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
